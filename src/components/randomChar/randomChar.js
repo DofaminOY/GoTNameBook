@@ -1,7 +1,9 @@
 import React, {Component} from 'react';
 import './randomChar.css';
 import gotService from '../../services/gotService';
-{/*import styled from 'styled-components';
+import Spinner from '../spinner';
+
+/*import styled from 'styled-components';
 const RandomBlock  = styled.div`
 background-color: #fff;
 padding: 25px 25px 15px 25px;
@@ -17,14 +19,8 @@ const Term  = styled.span`
 font-weight: bold;
 `;
 
- */}
-
-
-
-
-
-
-{/*
+ */
+/*
 export default class RandomChar extends Component {
 
     render() {
@@ -54,7 +50,7 @@ export default class RandomChar extends Component {
         );
     }
 }
-*/}
+*/
 
 
 export default class RandomChar extends Component {
@@ -65,10 +61,14 @@ export default class RandomChar extends Component {
     }
     gotService = new gotService();
     state = {
-      char:{}
+      char:{},
+      loading: true
     }
     onCharLoaded = (char) => {
-        this.setState({char})
+        this.setState({
+            char,
+            loading: false
+        })
     }
 
     updateChar(){
@@ -78,7 +78,10 @@ export default class RandomChar extends Component {
     }
 
     render() {
-        const{ char: {name, gender, born, died, culture} } = this.state;
+        const{ char: {name, gender, born, died, culture}, loading } = this.state;
+        if (loading){
+            return<Spinner/>
+        }
         return (
             <div className="random-block rounded">
                 <h4>Random Character: {name}</h4>
@@ -104,4 +107,3 @@ export default class RandomChar extends Component {
         );
     }
 }
-{/**/}
