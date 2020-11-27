@@ -18,6 +18,7 @@
   border-radius: 50%;
   background: #084f5a;
   animation: ldio-rv344q9nri9 0.3717472118959108s linear infinite;
+  
 }.ldio-rv344q9nri9 div:nth-child(1) > div {
   left: 148px;
   top: 88px;
@@ -86,16 +87,18 @@
 .loadingio-spinner-spin-lb0imslkig {
   width: 200px;
   height: 200px;
-  display: inline-block;
+   display: inline-block;
   overflow: hidden;
   background: none;
+  
 }
 .ldio-rv344q9nri9 {
   width: 100%;
   height: 100%;
   position: relative;
-  transform: translateZ(0) scale(1);
+   transform: translateZ(0) scale(1);
   backface-visibility: hidden;
   transform-origin: 0 0; /* see note above */
 }
-.ldio-rv344q9nri9 div { box-sizing: content-box; }
+.ldio-rv344q9nri9 div { box-sizing: content-box; 
+}

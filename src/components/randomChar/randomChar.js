@@ -79,12 +79,14 @@ export default class RandomChar extends Component {
 
     render() {
         const{ char, loading } = this.state;
-        if (loading){
-            return<Spinner/>
-        }
+
+        const spinner = loading ? <Spinner/> : null;
+        const content = !loading ? <View char = {char}/> : null;
+        
         return (
             <div className="random-block rounded">
-                <View char = {char}/>
+                {spinner}
+                {content}
             </div>
         );
     }
