@@ -32,7 +32,7 @@ export default class App extends Component {
                 </Container>
                 <Container>
                     <Row>
-                        <Col lg={{size: 5, offset: 0}}>
+                        <Col lg={{size: 10, offset: 0}}>
                             {char}
                             <button 
                                 className="toggle-btn"

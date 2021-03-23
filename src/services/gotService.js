@@ -39,13 +39,7 @@ export default class GotService {
         return this.getResource(`/houses/${id}/`);
     }
 
-    // isSet (data) {
-    // if (data) {
-    //     return data
-    // }else{
-    //  return "sorry no data :("
-    //    }
-    // }
+   
      
     isSet (data) 
     {

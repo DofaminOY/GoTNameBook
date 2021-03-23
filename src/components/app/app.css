@@ -1,8 +1,8 @@
 .toggle-btn {
     padding: 12px;
-    background-color: #1e2edb;
-    border: none;
-    border-radius: 4px;
+    background-color: #234151;
+    border: 2px solid #8b9499;
+    border-radius: 10px;
     color: #fff;
     margin-bottom: 40px;
     outline: none;
